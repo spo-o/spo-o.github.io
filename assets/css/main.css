@@ -1963,6 +1963,40 @@ section,
   border: 1px solid rgba(255,255,255,0.08);
 }
 
+.project-card-wide {
+  max-width: 1200px;
+}
+
+.project-intro {
+  max-width: 760px;
+}
+
+.ai-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.ai-project-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+}
+
+.ai-project-item ul {
+  line-height: 1.8;
+  padding-left: 18px;
+}
+
+#projectTabs .nav-link {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  margin: 0 6px 12px;
+  border-radius: 999px;
+}
+
 .tech-pill {
   display: inline-flex;
   align-items: center;
@@ -2010,6 +2044,12 @@ section,
 .resume-item ul {
   margin-top: 8px;
   line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+  .ai-project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* HOVER (optional but nice) */
@@ -2337,6 +2377,5 @@ section,
   right: 0;
   background: linear-gradient(to left, #000, transparent);
 }
-
 
 

@@ -118,6 +118,8 @@
         <span>Python</span>
         <span>SQL</span>
         <span>REST APIs</span>
+        <span>FAST APIs</span>
+
      
         <span>Node.js</span>
         <span>React</span>
@@ -128,6 +130,8 @@
         <span>OpenAI API</span>
         <span>LLMs</span>
         <span>RAG Pipelines</span>
+        <span>LangChain</span>
+        <span>LangGraph</span>
       </div>
 
     </div>
@@ -431,31 +435,19 @@
     <ul class="nav nav-tabs nav-justified mb-4 w-100" id="projectTabs" role="tablist">
 
       <li class="nav-item">
-        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#proj6">
-          Quantum Entropy Fun
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#proj-ai">
+          AI Trends
         </button>
       </li>
       
       <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#proj1">
-          Resume Intel
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#proj6">
+          Quantum Entropy Fun
         </button>
       </li>
     
       <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#proj2">Content Moderation AI</button>
-      </li>
-    
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#proj3">MedVoice</button>
-      </li>
-    
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#proj4">DigiSchool</button>
-      </li>
-    
-      <li class="nav-item">
-        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#proj5">CodeCraft</button>
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#proj-fullstack">Full Stack Projects</button>
       </li>
     
     </ul>
@@ -463,189 +455,195 @@
     <!-- ALL tab panes MUST be inside this -->
     <div class="tab-content" id="projectTabContent">
 
-      <!-- 1. Resume Intel -->
-      <div class="tab-pane fade" id="proj1">
+      <!-- AI Trending -->
+      <div class="tab-pane fade show active" id="proj-ai" role="tabpanel">
         <div class="d-flex justify-content-center">
-          <div class="project-card">
-    
+          <div class="project-card project-card-wide">
+
             <div class="d-flex align-items-center gap-2">
-              
-              <h4 class="text-white m-0">Resume Intelligence</h4>
+              <h4 class="text-white m-0">Trending AI</h4>
             </div>
-    
-            <div class="mt-2 d-flex flex-wrap gap-2">
-              <span class="tech-pill"><i class="bi bi-file-earmark-text"></i> PDF Parsing</span>
-              <span class="tech-pill"><i class="bi bi-cpu"></i> LLMs</span>
-              <span class="tech-pill"><i class="bi bi-bar-chart"></i> Scoring</span>
-              <span class="tech-pill"><i class="bi bi-table"></i> Pandas</span>
+
+            <p class="mt-3 text-white-50 project-intro">
+              A collection of AI-native projects spanning LLM workflows, agentic systems, moderation, healthcare voice testing, and finance-focused product experiences.
+            </p>
+
+            <div class="ai-project-grid mt-4">
+              <article class="ai-project-item">
+                <h5 class="text-white">SmartScrape</h5>
+                <div class="mt-2 d-flex flex-wrap gap-2">
+                  <span class="tech-pill"><i class="bi bi-shield-check"></i>Python</span>
+                  <span class="tech-pill"><i class="bi bi-shield-check"></i> Pydantic schemas</span>
+                  <span class="tech-pill"><i class="bi bi-diagram-3"></i> MCP</span>
+                  <span class="tech-pill"><i class="bi bi-shield-check"></i> Safe Tooling</span>
+                  <span class="tech-pill"><i class="bi bi-hdd-network"></i> FastAPI</span>
+                </div>
+                <ul class="mt-3 text-white-50">
+                  <li>Developed a Chrome extension for real-time webpage Q&A using local RAG and FastAPI.</li>
+                  <li>Enabled grounded answers via per-page FAISS indexing and chunk-based retrieval.</li>
+                  <li>Built note-generation pipeline to convert web content into structured study notes.</li>
+                  <div class="mt-3">
+                  <a href="https://github.com/spo-o/smartScrape" target="_blank" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </article>
+
+              <article class="ai-project-item">
+                <h5 class="text-white">FinQA Bot</h5>
+                <div class="mt-2 d-flex flex-wrap gap-2">
+                  <span class="tech-pill"><i class="bi bi-graph-up-arrow"></i>Python</span>
+                  <span class="tech-pill"><i class="bi bi-shield-check"></i> Hybrid RAG</span>
+                  <span class="tech-pill"><i class="bi bi-shield-check"></i> LangChain</span>
+                  <span class="tech-pill"><i class="bi bi-shield-check"></i> LangGraph</span>
+                  <span class="tech-pill"><i class="bi bi-file-earmark-bar-graph"></i> OpenAI API</span>
+                  <span class="tech-pill"><i class="bi bi-chat-square-text"></i> Fintech Chatbot</span>
+                </div>
+                <ul class="mt-3 text-white-50">
+                  <li>Built a financial QA chatbot using hybrid RAG and calculator-based reasoning.</li>
+                  <li>Improved answer accuracy with table-aware retrieval using embeddings and reranking.</li>
+                  <li>Developed CLI tools for live QA, debugging, and evaluation with LangSmith/vLLM support.</li>   </ul>
+                <a href="https://github.com/spo-o/finqa-langgraph-bot" target="_blank" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+              </article> 
+
+              <article class="ai-project-item">
+                <h5 class="text-white">Resume Intelligence</h5>
+                <div class="mt-2 d-flex flex-wrap gap-2">
+                  <span class="tech-pill"><i class="bi bi-file-earmark-text"></i> PDF Parsing</span>
+                  <span class="tech-pill"><i class="bi bi-cpu"></i> LLMs</span>
+                  <span class="tech-pill"><i class="bi bi-bar-chart"></i> Scoring</span>
+                  <span class="tech-pill"><i class="bi bi-table"></i> Pandas</span>
+                </div>
+                <ul class="mt-3 text-white-50">
+                  <li>Processed 100+ resumes extracting 20+ structured fields using LLM-based pipelines.</li>
+                  <li>Generated job-fit scores to improve candidate screening and prioritization.</li>
+                  <li>Reduced manual resume review effort by ~60% through automated extraction and scoring.</li>
+                  <li>Designed flexible pipelines to support multiple job roles and evaluation criteria.</li>
+                </ul>
+                <p class="mt-2 text-white-50"><strong>Use Case:</strong> HR teams can automatically shortlist candidates and reduce manual screening time.</p>
+                <div class="mt-3">
+                  <a href="https://github.com/spo-o/smart-resume-review" target="_blank" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </article>
+
+              <article class="ai-project-item">
+                <h5 class="text-white">Content Moderation AI</h5>
+                <div class="mt-2 d-flex flex-wrap gap-2">
+                  <span class="tech-pill"><i class="bi bi-chat"></i> NLP</span>
+                  <span class="tech-pill"><i class="bi bi-cpu"></i> Transformers</span>
+                  <span class="tech-pill"><i class="bi bi-search"></i> LIME</span>
+                </div>
+                <ul class="mt-3 text-white-50">
+                  <li>Built a transformer-based system achieving ~85% accuracy in toxic content detection.</li>
+                  <li>Added explainability using LIME to provide transparent reasoning for predictions.</li>
+                  <li>Enabled real-time moderation for streaming text inputs.</li>
+                  <li>Improved trust and interpretability in AI-driven moderation systems.</li>
+                </ul>
+                <p class="mt-2 text-white-50"><strong>Use Case:</strong> Can be used in social platforms to filter harmful content and improve user safety.</p>
+                <div class="mt-3">
+                  <a href="https://github.com/spo-o/Toxicity-detection" target="_blank" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </article>
+
+              <article class="ai-project-item">
+                <h5 class="text-white">MedVoice - Healthcare Voice AI Testing</h5>
+                <div class="mt-2 d-flex flex-wrap gap-2">
+                  <span class="tech-pill"><i class="bi bi-telephone"></i> Twilio</span>
+                  <span class="tech-pill"><i class="bi bi-mic"></i> Whisper</span>
+                  <span class="tech-pill"><i class="bi bi-cpu"></i> LLMs</span>
+                  <span class="tech-pill"><i class="bi bi-diagram-3"></i> Flask</span>
+                </div>
+                <ul class="mt-3 text-white-50">
+                  <li>Simulated multi-turn patient conversations across 10+ real-world scenarios.</li>
+                  <li>Automated voice testing using Twilio, Whisper, and LLM-based response generation.</li>
+                  <li>Maintained conversation state and generated structured evaluation reports.</li>
+                  <li>Improved testing coverage for edge cases in conversational AI systems.</li>
+                </ul>
+                <p class="mt-2 text-white-50"><strong>Use Case:</strong> Enables healthcare companies to validate AI voice assistants before deployment.</p>
+                <div class="mt-3">
+                  <a href="https://github.com/spo-o/prettyGoodAI" target="_blank" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </article>
             </div>
-    
-            <ul class="mt-3 text-white-50" style="line-height: 1.8;">
-              <li>Processed 100+ resumes extracting 20+ structured fields using LLM-based pipelines.</li>
-              <li>Generated job-fit scores to improve candidate screening and prioritization.</li>
-              <li>Reduced manual resume review effort by ~60% through automated extraction and scoring.</li>
-              <li>Designed flexible pipelines to support multiple job roles and evaluation criteria.</li>
-            </ul>
-            
-            <p class="mt-2 text-white-50"><strong>Use Case:</strong> HR teams can automatically shortlist candidates and reduce manual screening time.</p>
-    
-            <div class="mt-3">
-              <a href="https://github.com/spo-o/smart-resume-review" target="_blank" class="btn btn-sm btn-outline-light">
-                <i class="bi bi-github"></i> GitHub
-              </a>
-            </div>
-    
+
           </div>
         </div>
       </div>
     
-      <!-- 2. Content Moderation -->
-      <div class="tab-pane fade" id="proj2">
+      <div class="tab-pane fade" id="proj-fullstack" role="tabpanel">
         <div class="d-flex justify-content-center">
-          <div class="project-card">
-    
+          <div class="project-card project-card-wide">
+
             <div class="d-flex align-items-center gap-2">
-              
-              <h4 class="text-white m-0">Content Moderation AI</h4>
+              <h4 class="text-white m-0">Full Stack Projects</h4>
             </div>
-    
-            <div class="mt-2 d-flex flex-wrap gap-2">
-              <span class="tech-pill"><i class="bi bi-chat"></i> NLP</span>
-              <span class="tech-pill"><i class="bi bi-cpu"></i> Transformers</span>
-              <span class="tech-pill"><i class="bi bi-search"></i> LIME</span>
+
+            <p class="mt-3 text-white-50 project-intro">
+              End-to-end applications focused on product usability, reliable APIs, and scalable backend architecture.
+            </p>
+
+            <div class="ai-project-grid mt-4">
+              <article class="ai-project-item">
+                <h5 class="text-white">DigiSchool - LMS</h5>
+                <div class="mt-2 d-flex flex-wrap gap-2">
+                  <span class="tech-pill"><i class="bi bi-code-slash"></i> React</span>
+                  <span class="tech-pill"><i class="bi bi-diagram-3"></i> Django</span>
+                  <span class="tech-pill"><i class="bi bi-database"></i> PostgreSQL</span>
+                  <span class="tech-pill"><i class="bi bi-cloud"></i> AWS</span>
+                </div>
+                <ul class="mt-3 text-white-50">
+                  <li>Developed a full-stack LMS with scalable APIs supporting multiple users.</li>
+                  <li>Automated ~70% of course management workflows for instructors.</li>
+                  <li>Deployed on AWS with CI/CD pipelines for faster updates.</li>
+                  <li>Improved user experience through streamlined content and workflow management.</li>
+                </ul>
+                <p class="mt-2 text-white-50"><strong>Use Case:</strong> Helps educators manage courses, assignments, and student interactions efficiently.</p>
+                <div class="mt-3">
+                  <a href="https://github.com/spo-o/DigiSchool" target="_blank" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </article>
+
+              <article class="ai-project-item">
+                <h5 class="text-white">CodeCraft - E-Commerce Platform</h5>
+                <div class="mt-2 d-flex flex-wrap gap-2">
+                  <span class="tech-pill"><i class="bi bi-code-slash"></i> React</span>
+                  <span class="tech-pill"><i class="bi bi-cpu"></i> Node.js</span>
+                  <span class="tech-pill"><i class="bi bi-database"></i> MongoDB</span>
+                  <span class="tech-pill"><i class="bi bi-shield-lock"></i> JWT</span>
+                </div>
+                <ul class="mt-3 text-white-50">
+                  <li>Built a full-stack e-commerce platform supporting product catalog, cart, and orders.</li>
+                  <li>Designed REST APIs handling search, cart operations, and checkout workflows.</li>
+                  <li>Implemented JWT authentication and persistent cart functionality.</li>
+                  <li>Optimized backend performance for scalable product and user handling.</li>
+                </ul>
+                <p class="mt-2 text-white-50"><strong>Use Case:</strong> Supports small businesses in managing online storefronts and transactions.</p>
+                <div class="mt-3">
+                  <a href="https://github.com/spo-o/cartCraft" target="_blank" class="btn btn-sm btn-outline-light">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                </div>
+              </article>
             </div>
-    
-            <ul class="mt-3 text-white-50" style="line-height: 1.8;">
-              <li>Built a transformer-based system achieving ~85% accuracy in toxic content detection.</li>
-              <li>Added explainability using LIME to provide transparent reasoning for predictions.</li>
-              <li>Enabled real-time moderation for streaming text inputs.</li>
-              <li>Improved trust and interpretability in AI-driven moderation systems.</li>
-            </ul>
-            
-            <p class="mt-2 text-white-50"><strong>Use Case:</strong> Can be used in social platforms to filter harmful content and improve user safety.</p>
-    
-            <div class="mt-3">
-              <a href="https://github.com/spo-o/Toxicity-detection" target="_blank" class="btn btn-sm btn-outline-light">
-                <i class="bi bi-github"></i> GitHub
-              </a>
-            </div>
-    
-          </div>
-        </div>
-      </div>
-    
-      <!-- 3. MedVoice -->
-      <div class="tab-pane fade" id="proj3">
-        <div class="d-flex justify-content-center">
-          <div class="project-card">
-    
-            <div class="d-flex align-items-center gap-2">
-              
-              <h4 class="text-white m-0">MedVoice – Healthcare Voice AI Testing</h4>
-            </div>
-    
-            <div class="mt-2 d-flex flex-wrap gap-2">
-              <span class="tech-pill"><i class="bi bi-telephone"></i> Twilio</span>
-              <span class="tech-pill"><i class="bi bi-mic"></i> Whisper</span>
-              <span class="tech-pill"><i class="bi bi-cpu"></i> LLMs</span>
-              <span class="tech-pill"><i class="bi bi-diagram-3"></i> Flask</span>
-            </div>
-    
-            <ul class="mt-3 text-white-50" style="line-height: 1.8;">
-              <li>Simulated multi-turn patient conversations across 10+ real-world scenarios.</li>
-              <li>Automated voice testing using Twilio, Whisper, and LLM-based response generation.</li>
-              <li>Maintained conversation state and generated structured evaluation reports.</li>
-              <li>Improved testing coverage for edge cases in conversational AI systems.</li>
-            </ul>
-            
-            <p class="mt-2 text-white-50"><strong>Use Case:</strong> Enables healthcare companies to validate AI voice assistants before deployment.</p>
-    
-            <div class="mt-3">
-              <a href="https://github.com/spo-o/prettyGoodAI" target="_blank" class="btn btn-sm btn-outline-light">
-                <i class="bi bi-github"></i> GitHub
-              </a>
-            </div>
-    
-          </div>
-        </div>
-      </div>
-    
-      <!-- 4. DigiSchool -->
-      <div class="tab-pane fade" id="proj4">
-        <div class="d-flex justify-content-center">
-          <div class="project-card">
-    
-            <div class="d-flex align-items-center gap-2">
-              
-              <h4 class="text-white m-0">DigiSchool – LMS</h4>
-            </div>
-    
-            <div class="mt-2 d-flex flex-wrap gap-2">
-              <span class="tech-pill"><i class="bi bi-code-slash"></i> React</span>
-              <span class="tech-pill"><i class="bi bi-diagram-3"></i> Django</span>
-              <span class="tech-pill"><i class="bi bi-database"></i> PostgreSQL</span>
-              <span class="tech-pill"><i class="bi bi-cloud"></i> AWS</span>
-            </div>
-    
-            <ul class="mt-3 text-white-50" style="line-height: 1.8;">
-              <li>Developed a full-stack LMS with scalable APIs supporting multiple users.</li>
-              <li>Automated ~70% of course management workflows for instructors.</li>
-              <li>Deployed on AWS with CI/CD pipelines for faster updates.</li>
-              <li>Improved user experience through streamlined content and workflow management.</li>
-            </ul>
-            
-            <p class="mt-2 text-white-50"><strong>Use Case:</strong> Helps educators manage courses, assignments, and student interactions efficiently.</p>
-    
-            <div class="mt-3">
-              <a href="https://github.com/spo-o/DigiSchool" target="_blank" class="btn btn-sm btn-outline-light">
-                <i class="bi bi-github"></i> GitHub
-              </a>
-            </div>
-    
-          </div>
-        </div>
-      </div>
-    
-      <!-- 5. CodeCraft -->
-      <div class="tab-pane fade" id="proj5">
-        <div class="d-flex justify-content-center">
-          <div class="project-card">
-    
-            <div class="d-flex align-items-center gap-2">
-              
-              <h4 class="text-white m-0">CodeCraft – E-Commerce Platform</h4>
-            </div>
-    
-            <div class="mt-2 d-flex flex-wrap gap-2">
-              <span class="tech-pill"><i class="bi bi-code-slash"></i> React</span>
-              <span class="tech-pill"><i class="bi bi-cpu"></i> Node.js</span>
-              <span class="tech-pill"><i class="bi bi-database"></i> MongoDB</span>
-              <span class="tech-pill"><i class="bi bi-shield-lock"></i> JWT</span>
-            </div>
-    
-            <ul class="mt-3 text-white-50" style="line-height: 1.8;">
-              <li>Built a full-stack e-commerce platform supporting product catalog, cart, and orders.</li>
-              <li>Designed REST APIs handling search, cart operations, and checkout workflows.</li>
-              <li>Implemented JWT authentication and persistent cart functionality.</li>
-              <li>Optimized backend performance for scalable product and user handling.</li>
-            </ul>
-            
-            <p class="mt-2 text-white-50"><strong>Use Case:</strong> Supports small businesses in managing online storefronts and transactions.</p>
-    
-            <div class="mt-3">
-              <a href="https://github.com/spo-o/cartCraft" target="_blank" class="btn btn-sm btn-outline-light">
-                <i class="bi bi-github"></i> GitHub
-              </a>
-            </div>
-    
+
           </div>
         </div>
       </div>
 
-      <div class="tab-pane fade show active" id="proj6" role="tabpanel">
+      <div class="tab-pane fade" id="proj6" role="tabpanel">
 
         <div class="d-flex justify-content-center">
-          <div class="project-card">
+          <div class="project-card project-card-wide">
       
             <!-- Title -->
             <h4 class="text-white mb-2">Quantum Entropy Experiments</h4>
@@ -663,12 +661,8 @@
               Exploring real-time entropy as a source of randomness to drive dynamic behavior in systems.
             </p>
       
-            <!-- GRID -->
-            <div class="row mt-4">
-      
-              <!-- AVATAR -->
-              <div class="col-md-6 mb-4">
-      
+            <div class="ai-project-grid mt-4">
+              <article class="ai-project-item">
                 <h5 class="text-white">Entropy Avatar Engine</h5>
       
                 <ul class="mt-3 text-white-50">
@@ -685,12 +679,9 @@
                     <i class="bi bi-box-arrow-up-right"></i> Live
                   </a>
                 </div>
-      
-              </div>
-      
-              <!-- ROLLING -->
-              <div class="col-md-6 mb-4">
-      
+              </article>
+
+              <article class="ai-project-item">
                 <h5 class="text-white">Entropy Rolling Machine</h5>
       
                 <ul class="mt-3 text-white-50">
@@ -707,9 +698,7 @@
                     <i class="bi bi-box-arrow-up-right"></i> Live
                   </a>
                 </div>
-      
-              </div>
-      
+              </article>
             </div>
       
           </div>
@@ -729,14 +718,14 @@
     <h2>Just Me</h2>
 
     <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.85);">
-      I like talking to plants — especially flowers.  
+      I like talking to plants, especially flowers.  
       They’re surprisingly good listeners 🌸
     </p>
 
     <p style="margin-top: 10px; color: rgba(255,255,255,0.65);">
       I also like animals more than humans 🐾  
-      Currently looking for a job so I can adopt an owl🦉 and feed it well —  
-      so if you have updates on either, let me know !!
+      Currently looking for a job so I can adopt an owl🦉 and feed it well.  
+      So, if you have updates on either, let me know !!
     </p>
 
   </div>
